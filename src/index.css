@@ -23,7 +23,7 @@ height: 100%;
   overflow: hidden;
   background-color:  #e2eff3; /* Adjust background color as needed */
   z-index: 100;
-  
+  gap: 120px;
     display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,11 +48,21 @@ height: 100%;
   transform: translateY(-50%);
   margin: 0;
   padding: 0;
+  height: 30px;
+  gap:4px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  background-color: white;
+  border-radius: 5px;
 }
 .navbar-heading2 {
   position: relative;
   z-index: 1;
-  margin: 0;
+  height: 70px;
+  margin-left: 50px;
   padding-right: 1.5rem; /* Adjust spacing between text and triangle */
   line-height: 8rem; /* Adjust to vertically center the text */
 }
@@ -238,13 +248,13 @@ padding: 20px;
   position: relative;
   outline: none;
   border-radius: 20px;
-  border: 2px solid #3498db; /* Adding a border */
+  border: 2px solid #505353; /* Adding a border */
 }
 
 .option {
   flex: 1;
   text-align: center;
-  padding: 10px 20px;
+  padding: 5px 30px;
   transition: color 0.3s, background-color 0.3s;
 }
 
