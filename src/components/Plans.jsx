@@ -1,20 +1,33 @@
 import React from 'react';
 import Box from '@mui/material/Box';
+import Icon from '@mdi/react';
+import { mdiArrowExpandRight } from '@mdi/js';
 
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import { mdiCloudArrowUpOutline } from '@mdi/js';
 
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-  >
-    •
-  </Box>
-);
+import { mdiAccountOutline } from '@mdi/js';
+
+
+import { mdiEmailFast } from '@mdi/js';
+
+
+
+
+
+// import Card from '@mui/material/Card';
+// import CardActions from '@mui/material/CardActions';
+// import CardContent from '@mui/material/CardContent';
+// import Button from '@mui/material/Button';
+// // import Typography from '@mui/material/Typography';
+
+// const bull = (
+//   <Box
+//     component="span"
+//     sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
+//   >
+//     •
+//   </Box>
+// );
 
 const BasicCard=()=> {
   return (
@@ -43,25 +56,70 @@ const BasicCard=()=> {
   <div className="box-container">
   <div className="box box1">
     <div className="text">
-      <h2 className="topic-heading">60.5k</h2>
+      <h2 className="topic-heading">Basic</h2>
       <h2 className="topic">Article Views</h2>
+      <span class="original-price">$50/mo</span>
+  
+  <span class="new-price">$40/mo</span>
     </div>
-    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(31).png" alt="Views" />
+    <button className='card-button' style={{background:'#e2ed34'}}  >get Started <Icon path={mdiArrowExpandRight} size={1}/> </button>
+    <div style={
+      {  borderTop: '2px solid grey',width:'100%'}
+    }>
+
+      <p className="para" style={{display:'flex',alignItems:'center',justifyContent:'flex-start',justifyItems:'center'}}><Icon path={mdiAccountOutline} size={1} />upto 15 years </p>
+      <p className="para" style={{display:'flex',alignItems:'center',justifyContent:'flex-start',justifyItems:'center'}}> 
+<Icon path={mdiCloudArrowUpOutline} size={1} />upto 25GB storage </p> 
+     <p className="para" style={{display:'flex',alignItems:'center',justifyContent:'flex-start',justifyItems:'center'}}> <Icon path={mdiEmailFast} size={1} />Email support</p>
+ 
+    </div>
+    <h6>
+      Explore Features</h6>
   </div>
   <div className="box box2">
     <div className="text">
-      <h2 className="topic-heading">150</h2>
+      <h2 className="topic-heading">Standard</h2>
       <h2 className="topic">Likes</h2>
+      <span class="original-price">$50/mo</span>
+  <span class="new-price">$40/mo</span>
+
     </div>
-    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210185030/14.png" alt="likes" />
+    <button className='card-button' style={{background:'rgb(237 71 57)'}}>get Started <Icon path={mdiArrowExpandRight} size={1} /> </button>
+    <div style={
+      {  borderTop: '2px solid grey',width:'100%'}
+    }>
+
+      <p className="para" style={{display:'flex',alignItems:'center',justifyContent:'flex-start',justifyItems:'center'}}> <Icon path={mdiAccountOutline} size={1} />upto 15 years </p>
+      <p className="para" style={{display:'flex',alignItems:'center',justifyContent:'flex-start',justifyItems:'center'}}> 
+<Icon path={mdiCloudArrowUpOutline} size={1} />upto 25GB storage </p> 
+     <p className="para" style={{display:'flex',alignItems:'center',justifyContent:'flex-start',justifyItems:'center'}}> <Icon path={mdiEmailFast} size={1} /> Email support</p>
+ 
+    </div>
+    <h6>
+      Explore Features</h6>
   </div>
   <div className="box box3">
     <div className="text">
-      <h2 className="topic-heading">320</h2>
+      <h2 className="topic-heading">premium</h2>
       <h2 className="topic">Comments</h2>
+      <span class="original-price">$50/mo</span>
+      <span class="new-price">$40/mo</span>
+    
     </div>
-    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(32).png" alt="comments" />
-  </div>
+    <button className='card-button' style={{background:'#ee7bee'}}>get Started <Icon path={mdiArrowExpandRight} size={1} /> </button>
+    <div style={
+      {  borderTop: '2px solid grey',width:'100%'}
+    }>
+
+      <p className="para" style={{display:'flex',alignItems:'center',justifyContent:'flex-start',justifyItems:'center'}}> <Icon path={mdiAccountOutline} size={1} /> upto 15 years </p>
+      <p className="para" style={{display:'flex',alignItems:'center',justifyContent:'flex-start',justifyItems:'center'}}> 
+<Icon path={mdiCloudArrowUpOutline} size={1} />upto 25GB storage </p> 
+     <p className="para" style={{display:'flex',alignItems:'center',justifyContent:'flex-start',justifyItems:'center'}}> <Icon path={mdiEmailFast} size={1} />Email support</p>
+ 
+    </div>
+    <h6>
+      Explore Features</h6></div>
+   
 
 </div>
 

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import BasicCard from './Plans'
 import OtherCard from './OtherPlans'
 import Notification from '../features/notification'
+import AddAnything from '../features/AddAnything'
 const Body = () => {
 
   const [isMonthly, setIsMonthly] = useState(true);
@@ -16,7 +17,7 @@ const Body = () => {
       <div className="body-container">
         <div className="header-part-body">
           <h1 className='head-body'>Choose a plan that's right for you !</h1>
-          <div className="">
+          <div className="swith-button">
             <button className="toggle-button" onClick={handleClick}>
               <span className={`option ${isMonthly ? 'selected' : ''}`}>Monthly</span>
               <span className={`option ${!isMonthly ? 'selected' : ''}`}>Annually
@@ -34,7 +35,7 @@ const Body = () => {
         
         <div className='other-card'>
           <OtherCard />
-          <OtherCard />
+      
         </div>
         {/* <div className='card-body'>
           <BasicCard/>
@@ -42,9 +43,11 @@ const Body = () => {
           <BasicCard/>
 
         </div> */}
-</div>
+       </div>
 <Notification/>
-      </div>
+<AddAnything/>
+<div>lkdskmflm</div>
+       </div>
 
 
 

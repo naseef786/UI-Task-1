@@ -2,7 +2,10 @@ import React from 'react'
 import Logo from '../assets/Logo.png'
 import Icon from '@mdi/react';
 import { mdiChevronDown } from '@mdi/js';
-const Header = () => {
+
+import { mdiMenuOpen } from '@mdi/js';
+
+const Header = ({isSidebarOpen, toggleSidebar }) => {
   return (
     <div className="navbar">
 {/* <div>
@@ -11,15 +14,20 @@ const Header = () => {
  <img  src={Logo} className="navbar-heading2"/>
  
  <div className="navbar-heading" >
-  <div >
+  <div className='nav-options' >
   <img src={Logo} alt="df" style={{height:'30px',width:'30px', borderRadius:'50%'}} />
-  <span style={{fontSize:'12px'}}>naseef@gmail.com</span>
+  <span style={{fontSize:'12px'}}>naseef@gmail.com</span> 
+
   </div>
 
 
  </div>
+ {isSidebarOpen &&  <button className="toggle-btn" onClick={toggleSidebar}>
+        Toggle Sidebar
+      </button>}
+
  <div>
- <Icon path={mdiChevronDown} style={{background:'white',gap:'3px',display:'flex',alignItems:'center',justifyContent:'center',justifyItems:'center',padding:'5px'}} size={1} />
+ <Icon path={mdiChevronDown} style={{background:'white',    marginRight: '70px',display:'flex',alignItems:'center',justifyContent:'center',justifyItems:'center',padding:'3px',borderRadius:'3px'}} size={1} />
  </div>
 
 </div>
