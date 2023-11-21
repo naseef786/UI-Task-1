@@ -57,7 +57,7 @@ const BasicCard=()=> {
   <div className="box box1">
     <div className="text">
       <h2 className="topic-heading">Basic</h2>
-      <h2 className="topic">Article Views</h2>
+      
       <span class="original-price">$50/mo</span>
   
   <span class="new-price">$40/mo</span>
@@ -79,7 +79,7 @@ const BasicCard=()=> {
   <div className="box box2">
     <div className="text">
       <h2 className="topic-heading">Standard</h2>
-      <h2 className="topic">Likes</h2>
+
       <span class="original-price">$50/mo</span>
   <span class="new-price">$40/mo</span>
 
@@ -101,7 +101,7 @@ const BasicCard=()=> {
   <div className="box box3">
     <div className="text">
       <h2 className="topic-heading">premium</h2>
-      <h2 className="topic">Comments</h2>
+
       <span class="original-price">$50/mo</span>
       <span class="new-price">$40/mo</span>
     

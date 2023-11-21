@@ -42,7 +42,7 @@ const OtherCard=()=> {
     <div className="text">
     <button className='card-button' style={{background:'rgb(237 71 57)'}}>get Started  </button>
       <h2 className="topic-heading">Basic</h2>
-      <h2 className="topic">Article Views</h2>
+   
       <span class="original-price">$50/mo</span>
   
   <span class="new-price">$40/mo</span>
@@ -62,7 +62,7 @@ const OtherCard=()=> {
   <div className="boxi box2">
     <div className="boxi-text"> <button className='card-button' style={{background:'rgb(72 224 34)  '}}>get Started  </button>
       <h2 className="boxi-topic-heading">Standard</h2>
-      <h2 className="topic">Likes</h2>
+
       <span class="original-price">$50/mo</span>
   <span class="new-price">$40/mo</span>
   <button className='card-button' style={{background:'orange'}}>get Started <Icon path={mdiArrowExpandRight} size={1} /> </button>

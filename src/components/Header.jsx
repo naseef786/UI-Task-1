@@ -1,8 +1,8 @@
 import React from 'react'
-import Logo from '../assets/Logo.png'
+import profile from '../assets/profile.jpg'
 import Icon from '@mdi/react';
 import { mdiChevronDown } from '@mdi/js';
-
+import Logo from '../assets/Logo.png'
 import { mdiMenuOpen } from '@mdi/js';
 
 const Header = ({isSidebarOpen, toggleSidebar }) => {
@@ -15,7 +15,7 @@ const Header = ({isSidebarOpen, toggleSidebar }) => {
  
  <div className="navbar-heading" >
   <div className='nav-options' >
-  <img src={Logo} alt="df" style={{height:'30px',width:'30px', borderRadius:'50%'}} />
+  <img src={profile} alt="df" style={{height:'30px',width:'30px', borderRadius:'50%'}} />
   <span style={{fontSize:'12px'}}>naseef@gmail.com</span> 
 
   </div>

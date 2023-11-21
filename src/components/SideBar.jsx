@@ -2,6 +2,7 @@
 import { mdiFaceAgent } from '@mdi/js';
 import { mdiLogout } from '@mdi/js';
 import { mdiFrequentlyAskedQuestions } from '@mdi/js';
+import profile from '../assets/profile.jpg'
 import Icon from '@mdi/react';
 import { mdiViewDashboard } from '@mdi/js'
 import { mdiSproutOutline } from '@mdi/js';
@@ -23,7 +24,7 @@ const SideBar = ({isSidebarOpen}) => {
       <div className="sidebar-option-list">
         <div className="sidebar-profile-box">
 <div>
-<img className='' src={Logo} alt="" style={{height:'80px' ,width:'50px'}} />
+<img className='' src={profile} alt="" style={{height:'50px' ,width:'50px' ,borderRadius:'50%'}} />
 </div>
          <div >
          <h5>
