@@ -6,7 +6,7 @@ import { mdiBellBadge } from '@mdi/js';
 export default function Notification() {
     return (
         <div className='notifion-set'>
-            <Icon path={mdiBellBadge} size={1} />
+            <Icon path={mdiBellBadge} size={1.5} />
         </div>
     )
 }

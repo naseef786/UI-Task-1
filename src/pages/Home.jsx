@@ -2,15 +2,24 @@ import React from 'react'
 import Header from '../components/Header'
 import SideBar from '../components/SideBar'
 import Body from '../components/Body'
+import Notification from '../features/notification'
 
 const Home = () => {
   return (
-    <div>
+    <>
+     
         <Header/>
+      
+        <Notification/>
+  
+ 
+     
         <SideBar/>
+ 
+     
         <Body/>
         
-    </div>
+    </>
   )
 }
 
